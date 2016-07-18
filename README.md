@@ -2,8 +2,6 @@
 App can be seen [here](https://lmerza.com/vueassistant)
 
 
-## Build Setup
-
 ### install dependencies
 npm install
 
