@@ -1,0 +1,93 @@
+.main-app .little-padd
+  padding-left: 5px
+  padding-right: 20px
+
+.main-app .unit-change
+  position: absolute
+  right: 20px
+  top: 5px
+
+.main-app .toggle-switch
+  height: 30px
+  width: 80px
+  border: 1px solid black
+  display: inline-block
+  overflow: hidden
+  position: relative
+  -moz-appearance: none
+  -webkit-appearance: none
+  -o-appearance: none
+  border-radius: 3px
+  cursor: pointer
+
+.main-app .toggle-switch:after,
+.main-app .toggle-switch:before
+  height: 30px
+  width: 80px
+  display: block
+  line-height: 30px
+  text-align: center
+  position: absolute
+  transition: left 0.5s, right 0.5s
+
+.main-app .toggle-switch::after
+  left: 0
+
+.main-app .toggle-switch::before
+  right: 80px
+
+.main-app .toggle-switch:checked::after
+  left: 80px
+
+.main-app .toggle-switch:checked::before
+  right: 0
+
+.main-app .toggle-switch.switch-gender::after
+  background-color: #f1f1f1
+  content: 'US Units'
+  color: black
+
+.main-app .toggle-switch.switch-gender::before
+  content: 'SI Units'
+  background-color: #f1f1f1
+  color: black
+
+.main-app .toggle-switch-label
+  line-height: 30px
+  vertical-align: top
+  margin-top: 4px
+
+.main-app nav
+  background-color: rgba(144, 9, 9,1)
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+  border: none
+  border-radius: 0%
+.main-app nav a
+  color: white !important
+  font-size: 1.5em
+.main-app nav a:hover
+  color: #B12525
+
+@media screen and (max-width: 992px)
+  .main-app nav a
+    font-size: 3em
+    margin: 20px 0 20px 0px
+
+  .main-app .toggle-switch
+    height: 70px
+    width: 200px
+    border: 1px solid black
+  .main-app .toggle-switch:after,
+  .main-app .toggle-switch:before
+    height: 800px
+    width: 200px
+    padding-top: 20px
+    font-size: 3em
+  .main-app .toggle-switch::before
+    right: 200px
+
+  .main-app .toggle-switch:checked::after
+    left: 200px
+  .main-app .little-padd
+    padding-left: 15px
+    padding-right: 15px

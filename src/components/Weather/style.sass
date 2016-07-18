@@ -1,0 +1,88 @@
+.weather .weather-img
+	width: 140px
+	height: 140px
+	background-size: cover
+	margin: 0 auto
+	
+.weather .flex-container
+	display: flex
+	flex-flow: row no-wrap
+	justify-content: space-around
+	width: 100%
+	align-items: center
+
+
+@media (max-width: 992px)
+	.weather .weather-img
+		margin: 0 auto
+	.weather h2
+		font-size: 6em !important
+		margin-bottom: -20px
+	.weather h4
+		font-size: 1.7em
+	.weather h6
+		font-size: 1.3em
+	.weather table
+		margin-top: 4em
+		font-size: 3em
+	.weather .flex-container
+		flex-flow: column wrap
+	.weather .weather-day
+		margin-top: 7em
+		width: 100%
+	.weather canvas
+		margin-top: 5em
+
+
+// days of the week		
+.weather h2
+	font-size: 2vw
+
+
+.weather .top-row
+	margin-bottom: 80px
+
+.weather table
+	width: 100%
+.weather table tr:not(:last-of-type)
+	border-bottom: solid 1px black
+.weather table td
+	padding-top: 10px
+	padding-bottom: 10px
+.weather table tr td:last-of-type
+	text-align: right
+
+@media (max-width: 992px)
+	#myChart
+		display: none !important
+
+
+
+
+
+.clear-day
+	background: url(./../../assets/clear-day.png) no-repeat 0px 0px
+
+.clear-night
+	background: url(./../../assets/clear-night.png) no-repeat 0px 0px
+
+.rain
+	background: url(./../../assets/rain.png) no-repeat 0px 23px
+
+.snow
+	background: url(./../../assets/snow.png) no-repeat 0px 0px
+
+.sleet
+	background: url(./../../assets/sleet.png) no-repeat 0px 0px
+
+.fog
+	background: url(./../../assets/fog.png) no-repeat 0px 0px
+
+.cloudy,
+.wind
+	background: url(./../../assets/cloudy.png) no-repeat 0px 0px
+
+.partly-cloudy-night
+	background: url(./../../assets/partly-cloudy-night.png) no-repeat 0px 0px
+.partly-cloudy-day
+	background: url(./../../assets/partly-cloudy-day.png) no-repeat 0px 7px
